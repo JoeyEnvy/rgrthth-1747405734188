@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsffgh - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #2f3640;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #dcdde1;
+            padding: 2em;
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1em 0;
+        }
+
+        .about {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+        }
+
+        .service-item {
+            background-color: #00b894;
+            color: #fff;
+            padding: 1em;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonials {
+            background-color: #f1f2f6;
+            padding: 2em;
+        }
+
+        .testimonial-item {
+            margin-bottom: 1em;
+            border-left: 4px solid #1e90ff;
+            padding-left: 1em;
+        }
+
+        .contact {
+            text-align: center;
+            background-color: #dcdde1;
+            padding: 2em;
+            border-radius: 8px;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact button {
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            padding: 0.7em 1.5em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2f3640;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>dsffgh Services</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <h2>Welcome to dsffgh</h2>
+            <p>Your one-stop solution for all retail needs, providing exceptional services and products.</p>
+            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df" alt="Retail Store">
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>At dsffgh, we strive to offer the best retail experience to our customers. Our mission is to provide high-quality products coupled with exemplary customer service. We cater to a diverse clientele, always ensuring that our offerings are not only top-notch but also affordable. Our team is dedicated to continuous improvement, embracing innovation to meet the ever-evolving needs of the market.</p>
+            <p>We believe in building lasting relationships with our clients. Our extensive range of products is carefully curated to ensure satisfaction across various preferences and demands. We are committed to sustainability and ethical sourcing, ensuring that every product is not only desirable but also responsibly obtained.</p>
+            <ul>
+                <li>Wide range of products</li>
+                <li>Exceptional customer service</li>
+                <li>Affordable pricing</li>
+                <li>Sustainable and ethical sourcing</li>
+            </ul>
+        </section>
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Product Sourcing</h3>
+                <p>We source the best products globally to ensure quality and variety.</p>
+                <i class="fas fa-globe"></i>
+            </div>
+            <div class="service-item">
+                <h3>Customer Support</h3>
+                <p>24/7 customer support to assist with all inquiries and issues.</p>
+                <i class="fas fa-headset"></i>
+            </div>
+            <div class="service-item">
+                <h3>Customized Solutions</h3>
+                <p>Tailored solutions to meet unique customer requirements.</p>
+                <i class="fas fa-cogs"></i>
+            </div>
+        </section>
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-item">
+                <blockquote>"dsffgh has transformed my shopping experience. Their products are top-notch and the service is unparalleled!"</blockquote>
+                <cite>- Alex J.</cite>
+            </div>
+            <div class="testimonial-item">
+                <blockquote>"I love the variety and quality of products. The customer service team is always helpful and friendly."</blockquote>
+                <cite>- Jamie T.</cite>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 dsffgh. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
